@@ -1,0 +1,18 @@
+﻿.checklist_fields
+{
+    width:960px;
+}
+
+.checklist_fields_left
+{
+    padding-top:5px;
+    width:100px;
+    float:left;
+    text-align:right;
+}
+
+.checklist_fields_right
+{
+    width:855px;
+    float:right;
+}

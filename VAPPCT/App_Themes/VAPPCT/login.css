@@ -1,0 +1,18 @@
+﻿.login_fields
+{
+    width:225px;
+}
+
+.login_fields_left
+{
+    width:70px;
+    padding-top:5px;
+    float:left;
+    text-align:right;
+}
+
+.login_fields_right
+{
+    width:150px;
+    float:right;
+}

@@ -1,0 +1,6 @@
+﻿<asp:Panel SkinID="VariableEditor" runat="server"
+    CssClass="app_panel"
+    Height="180"
+    ScrollBars="Vertical"
+    Width="475">
+</asp:Panel>

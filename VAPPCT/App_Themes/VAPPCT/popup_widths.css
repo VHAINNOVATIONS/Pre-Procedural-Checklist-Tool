@@ -1,0 +1,104 @@
+﻿.login
+{
+    width:245px;
+}
+
+.cancel_processing
+{
+    width:300px;
+}
+
+.checklist_selector
+{
+    width:795px;
+}
+
+.decision_state_edit
+{
+    width:380px;
+}
+
+.existing_multi
+{
+    width:875px;
+}
+
+.existing_single
+{
+    width:520px;
+}
+
+.item_selector
+{
+    width:840px;
+}
+
+.item_editor
+{
+    width:700px;
+}
+
+.item_group_edit
+{
+    width:355px;
+}
+
+.item_history
+{
+    width:715px;
+}
+
+.map_popup
+{
+    width:785px;
+}
+
+.patient_item_editor
+{
+    width:730px;
+}
+
+.pat_cli_editor
+{
+    width:630px;
+}
+
+.save_as
+{
+    width:400px;
+}
+
+.single_patient_popup
+{
+    width:975px;
+}
+
+.state_selector
+{
+    width:920px;
+}
+
+.service_edit
+{
+    width:355px;
+}
+
+.temporal_state_edit
+{
+    width:380px;
+}
+
+.tiu_note
+{
+    width:716px;
+}
+
+.outcome_state_edit
+{
+    width:380px;
+}
+
+.view_value_popup
+{
+    width:655px;
+}

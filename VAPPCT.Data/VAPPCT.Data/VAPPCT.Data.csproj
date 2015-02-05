@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA4C856D-2298-47B3-AB0B-7A1DAC6DDE5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VAPPCT.Data</RootNamespace>
+    <AssemblyName>VAPPCT.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VAPPCT.DA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VAPPCT.DA\VAPPCT.DA\bin\Release\VAPPCT.DA.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\CAppUser.cs" />
+    <Compile Include="App\CDataDBConn.cs" />
+    <Compile Include="ChecklistItem\CChecklistItemData.cs" />
+    <Compile Include="ChecklistItem\CChecklistItemDataItem.cs" />
+    <Compile Include="ChecklistItem\CChecklistItemPermissionsDataItem.cs" />
+    <Compile Include="ChecklistItem\CCLIDSEditDataItem.cs" />
+    <Compile Include="PatientChecklist\CAssignChecklistThread.cs" />
+    <Compile Include="PatientChecklist\CAssignChecklistThreadPool.cs" />
+    <Compile Include="Checklist\CChecklistData.cs" />
+    <Compile Include="Checklist\CChecklistDataItem.cs" />
+    <Compile Include="Checklist\CChecklistPermissionsDataItem.cs" />
+    <Compile Include="Checklist\CCLCloseableDataItem.cs" />
+    <Compile Include="Checklist\CCLReadOnlyDataItem.cs" />
+    <Compile Include="Checklist\CCLTIUDataItem.cs" />
+    <Compile Include="Checklist\CCLViewableDataItem.cs" />
+    <Compile Include="Clinic\CClinicData.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FrameWork\CUserData.cs" />
+    <Compile Include="Item Collection\CItemCollectionData.cs" />
+    <Compile Include="Item Collection\CItemCollectionDataItem.cs" />
+    <Compile Include="ItemComponent\CICRangeDataItem.cs" />
+    <Compile Include="ItemComponent\CICStateDataItem.cs" />
+    <Compile Include="ItemComponent\CItemComponentData.cs" />
+    <Compile Include="ItemComponent\CItemComponentDataItem.cs" />
+    <Compile Include="Item\CItemData.cs" />
+    <Compile Include="Item\CItemDataItem.cs" />
+    <Compile Include="Lab\CLabData.cs" />
+    <Compile Include="Logic Module\CExecuteExpression.cs" />
+    <Compile Include="Logic Module\CExpression.cs" />
+    <Compile Include="Logic Module\CExpressionList.cs" />
+    <Compile Include="Logic Module\CLogic.cs" />
+    <Compile Include="Logic Module\CParseExpression.cs" />
+    <Compile Include="Logic Module\CPatientChecklistLogic.cs" />
+    <Compile Include="Logic Module\CValidateExpression.cs" />
+    <Compile Include="LogicModuleMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogicModuleMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MDWS\CMDWSOps.cs" />
+    <Compile Include="MDWS\CMDWSStatus.cs" />
+    <Compile Include="MDWS\CMDWSTransfer.cs" />
+    <Compile Include="NoteTitle\CNoteTitleData.cs" />
+    <Compile Include="Note\CNoteData.cs" />
+    <Compile Include="PatientChecklistItem\CPatChecklistItemData.cs" />
+    <Compile Include="PatientChecklistItem\CPatChecklistItemDataItem.cs" />
+    <Compile Include="PatientChecklist\CPatChecklistData.cs" />
+    <Compile Include="PatientChecklist\CPatChecklistDataItem.cs" />
+    <Compile Include="Patient\CMPRunLogicThread.cs" />
+    <Compile Include="Patient\CMPRunLogicThreadPool.cs" />
+    <Compile Include="Patient\CPatientData.cs" />
+    <Compile Include="Patient\CPatientDataItem.cs" />
+    <Compile Include="Patient\CPatientItemCompList.cs" />
+    <Compile Include="Patient\CPatientItemComponentDataItem.cs" />
+    <Compile Include="Patient\CPatientItemData.cs" />
+    <Compile Include="Patient\CPatientItemDataItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityKey\CSecurityKeyData.cs" />
+    <Compile Include="Service References\MDWSEmrSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site\CSiteData.cs" />
+    <Compile Include="Specialty\CSpecialtyData.cs" />
+    <Compile Include="Static\CDecisionStateData.cs" />
+    <Compile Include="Static\CDecisionStateDataItem.cs" />
+    <Compile Include="Static\CItemGroupData.cs" />
+    <Compile Include="Static\CItemGroupDataItem.cs" />
+    <Compile Include="Static\COutcomeStateData.cs" />
+    <Compile Include="Static\COutcomeStateDataItem.cs" />
+    <Compile Include="Static\CPlaceHolderData.cs" />
+    <Compile Include="Static\CPlaceHolderDataItem.cs" />
+    <Compile Include="Static\CServiceData.cs" />
+    <Compile Include="Static\CServiceDataItem.cs" />
+    <Compile Include="Static\CSTATData.cs" />
+    <Compile Include="Static\CStateDataItem.cs" />
+    <Compile Include="Static\CTemporalStateData.cs" />
+    <Compile Include="Static\CTemporalStateDataItem.cs" />
+    <Compile Include="Static\CTrueFalseData.cs" />
+    <Compile Include="Static\CTrueFalseDataItem.cs" />
+    <Compile Include="Team\CTeamData.cs" />
+    <Compile Include="VAPPCTComm\CCommDBConn.cs" />
+    <Compile Include="VAPPCTComm\CCommunicator.cs" />
+    <Compile Include="VAPPCTComm\CMPRefreshThread.cs" />
+    <Compile Include="VAPPCTComm\CMPRefreshThreadPool.cs" />
+    <Compile Include="VAPPCTComm\CVAPPCTCommData.cs" />
+    <Compile Include="Ward\CWardData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\MDWSEmrSvc\EmrSvc.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MDWSEmrSvc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MDWSEmrSvc\EmrSvc.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MDWSEmrSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MDWSEmrSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MDWSEmrSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.BoolTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.DataSourceArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.MentalHealthInstrumentResultSetTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.NoteResultTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.OrderDialogItemArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.OrderTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.PatientArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.PatientRecordFlagArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.PatientTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.PersonsTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.RadiologyReportTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.RegionArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.RegionTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.ReminderReportPatientListTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.SiteArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.SiteTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedAllergyArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedAppointmentArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedChemHemRptArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedConsultArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedCytologyRptArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedHealthSummaryArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedHospitalLocationArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedIcdRptArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedInpatientStayArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedLabTestArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedMedicationArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedMentalHealthInstrumentAdministrationArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedMicrobiologyRptArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedNoteArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedOrderArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedPatientArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedPatientArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedPatientAssociateArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedProblemArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedRadiologyReportArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedSurgeryReportArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedSurgicalPathologyRptArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedText.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedTextArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedVisitArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedVitalSignArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TaggedVitalSignSetArrays.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TextArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.TextTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.UserArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.UserSecurityKeyArray.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MDWSEmrSvc\VAPPCT.Data.MDWSEmrSvc.UserTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogicModuleMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogicModuleMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

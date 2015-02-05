@@ -1,0 +1,38 @@
+﻿/*common look and feel for all user controls that 
+have a table with 2 colums, left col is the label, 
+right col is the value*/
+.uce
+{
+    table-layout:auto;
+	border-width:1px;
+	border-style:solid;
+}
+
+.uce_leftcol 
+{
+    font-weight:normal;
+	font-size:12px;
+	font-family:verdana,arial;
+	text-align:right;
+    background-color:white;
+    color:Black;
+}
+
+.uce_rightcol
+{
+    font-weight:normal;
+	font-size:12px;
+	font-family:verdana,arial;
+	text-align:left;
+    background-color:white;
+    color:Black;
+}
+
+.uce_col_noalg
+{
+    font-weight:normal;
+	font-size:12px;
+	font-family:verdana,arial;
+    background-color:white;
+    color:Black;
+}

@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register TagPrefix="uc" TagName="Timeout" Src="~/app_ucTimeout.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <script type="text/javascript" src="js/vappct.js">
+        </script>
+        
+        <title>Pre-Procedure Checklist</title>
+        
+        <asp:ContentPlaceHolder ID="cphHead" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body onbeforeunload="PleaseWait();">
+        <form id="frmMain" runat="server">
+            <!-- busy box for page transitions... please wait... starts off hidden -->
+            <div id="divPleaseWait"
+                class="please_wait">
+                <span class="please_wait_message">Please wait...</span>
+            </div>
+            
+            <!--Update Progress-->
+            <asp:UpdateProgress ID="mpUpdateProgress" runat="server"
+                DynamicLayout="true">
+                <ProgressTemplate>
+                    <!--busy box for everything other than page transitions-->
+                    <div id="divPleaseWaitTrans"
+                        class="please_wait">
+                        <span class="please_wait_message">Please wait...</span>
+                    </div>
+
+                    <script language="javascript" type="text/javascript">
+                        ShowCenter(150, 50, 'divPleaseWaitTrans');
+                    </script>
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+            
+            <asp:ToolkitScriptManager ID="tsmMASTER" runat="server">
+            </asp:ToolkitScriptManager>
+            <!--1024 x 768 = 960 x 720 -->
+            <div class="mp_main_div">
+                <div class="app_main_header"
+                    style="float: left;">
+                    VA Pre-Procedure Checklist Prototype
+                    <span style="font-size: xx-small; font-family: verdana,arial;">
+                        Alpha 3.4.9
+                    </span>
+                </div>
+                <div id="divTitle" runat="server"
+                    class="app_main_header_title"
+                    style="float: right;">
+                </div>
+                <div class="app_horizontal_spacer">
+                </div>
+                <asp:Panel ID="pnlNav" runat="server"
+                    Visible="false"
+                    style="float: left;">
+                    <a id="aNavBeg"
+                        href="#aNavEnd"
+                        title="Skip to the end of navigation">
+                    </a>
+                    <asp:Menu ID="mnuMain" runat="server"
+                        SkipLinkText=""
+                        Orientation="Horizontal">
+                        <StaticMenuStyle BorderColor="#0000FF"
+                            BorderStyle="Solid"
+                            BorderWidth="1"
+                            HorizontalPadding="0"
+                            Font-Size="Smaller"
+                            VerticalPadding="2" />
+                        <StaticMenuItemStyle CssClass="app_main_menu_items"
+                            HorizontalPadding="4"
+                            VerticalPadding="3" />
+                    </asp:Menu>
+                    <a id="aNavEnd"
+                        href="#aNavBeg"
+                        title="Skip to the beginning of navigation">
+                    </a>
+                </asp:Panel>
+                <div style="float: right;">
+                    <div id="divLoginInfo" runat="server"
+                        style="float: left; padding-right: 10px;">
+                    </div>
+                    <asp:Button ID="btnLogoff" runat="server"
+                        OnClick="btnLogoff_Click"
+                        Text="Log Off"
+                        style="float: right; padding-top: 3px;" />
+                </div>
+                <div class="app_horizontal_spacer">
+                </div>
+                <!--status info-->
+                <asp:UpdatePanel ID="upMasterStatus" runat="server"
+                    RenderMode="Block">
+                    <ContentTemplate>
+                        <asp:Timer ID="tmrLogoffWarning" runat="server"
+                            Interval="100000"
+                            OnTick="tmrLogoffWaring_Tick">
+                        </asp:Timer>
+                        <div id="divMasterStatus" runat="server">
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                <asp:UpdatePanel ID="upTimeout" runat="server"
+                    RenderMode="Block">
+                    <ContentTemplate>
+                        <asp:HiddenField ID="hfTimeout" runat="server" />
+                        <asp:ModalPopupExtender ID="mpeTimeout" runat="server"
+                            PopupControlID="pnlTimeout"
+                            TargetControlID="hfTimeout">
+                        </asp:ModalPopupExtender>
+                        <asp:Panel ID="pnlTimeout" runat="server">
+                            <uc:Timeout ID="app_ucTimeout" runat="server"
+                                Visible="false" />
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+    
+                <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </body>
+</html>

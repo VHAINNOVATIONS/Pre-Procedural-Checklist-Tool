@@ -1,0 +1,31 @@
+
+Admissions*                       
+Allergies               
+Anatomic Pathology       
+Blood Bank         
+Drug Class           
+Exams*                 
+Health Factors 
+Immunizations                 
+Lab Tests             
+Medication,BCMA           
+Medication,Inpatient     
+Medication,Outpatient 
+Medication,Non-VA               
+Medicine 
+Mental Health                   
+Microbiology       
+Notes     
+Orders   
+Patient Education*           
+Problems             
+Procedures         
+Purpose of Visit*                 
+Radiology Exams 
+Registration Dx*               
+Registration Op/Proc*   
+Reminder Taxonomy*   
+Skin Tests             
+Surgery                 
+Visits     
+Vitals 

@@ -1,0 +1,23 @@
+﻿.PopupBody
+{
+    border: thin ridge #000000;
+    background-color: #FFFFFF;
+    padding: 4px;
+}
+.PopupTitle
+{
+    padding-top:5px;
+    padding-bottom:5px;
+    width:100%;
+    background-color:#000033;
+    font-weight:bold;
+	font-size: 12px;
+	font-family:verdana,arial;
+	text-align:center;
+	color:White;
+}
+.PopupSpacer
+{
+    height:5px; 
+    width:100%;
+}

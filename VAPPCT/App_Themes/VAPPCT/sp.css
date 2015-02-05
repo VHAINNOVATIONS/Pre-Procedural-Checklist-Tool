@@ -1,0 +1,38 @@
+﻿.patient_checklist_fields
+{
+    width:765px;
+}
+
+.patient_checklist_fields_left
+{
+    padding-top:4px;
+    width:110px;
+    float:left;
+    text-align:right;
+}
+
+.patient_checklist_fields_right
+{
+    width:650px;
+    float:right;
+}
+
+.patient_item_fields
+{
+    width:720px;
+}
+
+.pif_left_padding_top
+{
+    padding-top:4px;
+    padding-right:5px;
+    width:75px;
+    float:left;
+    text-align:right;
+}
+
+.pif_right
+{
+    width:630px;
+    float:right;
+}

@@ -1,0 +1,60 @@
+﻿.gv
+{ 	
+    font-size: 11px;
+	font-family: verdana,arial;
+}
+
+.gv_headerstyle
+{
+    background: White;
+	text-align: center;
+	color: #003366;
+    vertical-align:middle;
+}
+
+.gv_headerstyle_bw
+{
+    background: White;
+	color: Black;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.gv_rowstyle
+{
+	background: White;
+	text-align: left;
+	color: #003366;
+    vertical-align:middle;
+}
+
+.gv_rowstyle_bw
+{
+	background: White;
+	color: Black;
+}
+
+.gv_selected_rowstyle
+{
+	background:#000033;
+	text-align: left;
+	color:White;
+    vertical-align:middle;
+}
+
+.gv_truncated 
+{
+    display:inline-block;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.gv_header_image
+{
+    margin: 0px 25px 0px 25px;
+}
+
+.gv_pleasewait
+{
+}

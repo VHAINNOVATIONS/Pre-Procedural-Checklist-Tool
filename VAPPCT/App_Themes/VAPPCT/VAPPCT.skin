@@ -1,0 +1,13 @@
+﻿<asp:GridView runat="server"
+    CssClass="gv"
+    UseAccessibleHeader="true"
+    AutoGenerateColumns="false">
+    <RowStyle CssClass="gv_rowstyle" />
+    <HeaderStyle CssClass="gv_headerstyle" />
+    <SelectedRowStyle CssClass="gv_selected_rowstyle" />
+    <PagerStyle CssClass="gv_pleasewait" />
+</asp:GridView>
+
+<asp:ModalPopupExtender runat="server"
+    BackgroundCssClass="modalBackground">
+</asp:ModalPopupExtender>

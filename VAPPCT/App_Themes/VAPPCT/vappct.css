@@ -1,0 +1,124 @@
+﻿div.mp_main_div
+{
+    width:960px;   
+    margin-left:auto;
+    margin-right:auto;
+}
+
+table.mp_header_table
+{
+    width:960px;
+    background-color:white;
+}
+
+.app_main_header
+{
+    width:745px;
+    Height:25px;
+    
+    color:White;
+    background-color:#000033;
+    
+    padding-top:9px;
+    padding-left:5px;
+	
+    font-size:16px;
+    text-align:left;
+	font-weight:bold;
+	font-family:verdana,arial;
+}
+
+.app_main_header_title
+{
+    width:205px;
+    Height:25px;
+        
+    color:White;
+	background-color:#000033;
+	
+	padding-top:9px;
+    padding-left:5px;
+    
+    font-size:14px;
+	font-weight:bold;
+	font-family:verdana,arial;
+	text-align:right;
+}
+
+.app_label1
+{
+    font-size:14px;
+	color:#000033;
+	font-weight:bold;
+	font-family:verdana,arial;
+	margin: 5px 0px 5px 0px;
+}
+
+.app_label2
+{
+    font-size:12px;
+	color:#000033;
+	font-weight:bold;
+	font-family:verdana,arial;
+	margin: 5px 0px 5px 0px;
+}
+
+.app_label4
+{
+    font-weight: normal;
+	font-size: 12px;
+	font-family:verdana,arial;
+}
+
+.app_horizontal_spacer
+{
+    height:5px; 
+    width:100%;
+    clear:both;
+}
+
+.app_main_menu_items
+{
+    font-weight:300;
+	font-size:12px;
+	font-weight:bold;
+	color:#000033;
+	font-family:verdana,arial;
+	text-align:left;
+}
+
+.app_panel
+{
+    overflow:Hidden;
+	border-width:1px;
+	border-style:Solid;
+    background-color:White;
+    border-color:Black;
+}
+
+.access_key
+{
+    text-decoration:underline;
+}
+
+.please_wait
+{
+    display: none;
+    width: 150px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #000033;
+    border: 1px solid #0000FF;
+    text-align: center;
+    z-index: 20000;
+    position: fixed;
+}
+
+.please_wait_message
+{
+    display: block;
+    margin-top: 18px;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+}

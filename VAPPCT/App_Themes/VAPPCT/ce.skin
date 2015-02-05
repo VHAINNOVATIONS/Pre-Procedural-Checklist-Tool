@@ -1,0 +1,18 @@
+﻿<asp:Panel SkinID="StateSelector" runat="server"
+    CssClass="app_panel"
+    Height="220"
+    ScrollBars="Vertical"
+    Width="298">
+</asp:Panel>
+
+<asp:ListBox SkinID="FullLogicSelector" runat="server"
+    SelectionMode="Single"
+    Height="180"
+    Width="300">
+</asp:ListBox>
+
+<asp:ListBox SkinID="HalfLogicSelector" runat="server"
+    SelectionMode="Single"
+    Height="78"
+    Width="300">
+</asp:ListBox>

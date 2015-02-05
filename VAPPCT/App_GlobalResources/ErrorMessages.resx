@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ERROR_AC_CLID" xml:space="preserve">
+    <value>Please select a valid checklist!</value>
+  </data>
+  <data name="ERROR_AC_NONESEL" xml:space="preserve">
+    <value>Please select a patient!</value>
+  </data>
+  <data name="ERROR_AC_SELECTED" xml:space="preserve">
+    <value>Failed to get selected patients!</value>
+  </data>
+  <data name="ERROR_CE_ACTIVE" xml:space="preserve">
+    <value>Please select a valid checklist active value!</value>
+  </data>
+  <data name="ERROR_CE_CLOSEABLE" xml:space="preserve">
+    <value>Please select a valid closeable by value!</value>
+  </data>
+  <data name="ERROR_CE_TIU" xml:space="preserve">
+    <value>Please select a valid TIU permission value!</value>
+  </data>
+  <data name="ERROR_CE_DESCRIPTION" xml:space="preserve">
+    <value>Please enter a valid checklist description!</value>
+  </data>
+  <data name="ERROR_CE_DSCHANGE" xml:space="preserve">
+    <value>Please select a valid decision state changeable by value!</value>
+  </data>
+  <data name="ERROR_CE_ITEMEXISTS" xml:space="preserve">
+    <value>Item already exists!</value>
+  </data>
+  <data name="ERROR_CE_LABEL" xml:space="preserve">
+    <value>Please enter a valid checklist label!</value>
+  </data>
+  <data name="ERROR_CE_OSCHANGE" xml:space="preserve">
+    <value>Please select a valid outcome state changeable by value!</value>
+  </data>
+  <data name="ERROR_CE_READONLY" xml:space="preserve">
+    <value>Please select a valid read only by value!</value>
+  </data>
+  <data name="ERROR_CE_SERVICE" xml:space="preserve">
+    <value>Please select a valid service value!</value>
+  </data>
+  <data name="ERROR_CE_STATE" xml:space="preserve">
+    <value>Please select at least one temporal, one outcome and one decision state!</value>
+  </data>
+  <data name="ERROR_CE_TIMEPERIOD" xml:space="preserve">
+    <value>Please enter a valid checklist item temporal state time period!</value>
+  </data>
+  <data name="ERROR_CE_TIMEUNITS" xml:space="preserve">
+    <value>Please select a valid time unit value!</value>
+  </data>
+  <data name="ERROR_CE_TSCHANGE" xml:space="preserve">
+    <value>Please select a valid temporal state changeable by value!</value>
+  </data>
+  <data name="ERROR_CE_VIEWABLE" xml:space="preserve">
+    <value>Please select a valid viewable by value!</value>
+  </data>
+  <data name="ERROR_CE_SORTORDER" xml:space="preserve">
+    <value>Please enter a valid checklist item sort order!</value>
+  </data>
+  <data name="ERROR_CL_SAVEAS_LABEL" xml:space="preserve">
+    <value>Please enter a valid checklist label!</value>
+  </data>
+  <data name="ERROR_CONN_NULL" xml:space="preserve">
+    <value>Unable to complete transaction, data connection is null!</value>
+  </data>
+  <data name="ERROR_DATA_EXISTS" xml:space="preserve">
+    <value>Unable to create new item, a record already exists, please check your data entry!</value>
+  </data>
+  <data name="ERROR_DATE_RANGE" xml:space="preserve">
+    <value>Please select a valid date range!</value>
+  </data>
+  <data name="ERROR_DS_DEFINITION" xml:space="preserve">
+    <value>Please select a valid decision state definition!</value>
+  </data>
+  <data name="ERROR_DS_EMPTY" xml:space="preserve">
+    <value>Unable to complete transaction, dataset is empty!</value>
+  </data>
+  <data name="ERROR_DS_LABEL" xml:space="preserve">
+    <value>Please enter a valid decision state label!</value>
+  </data>
+  <data name="ERROR_FUTURE_DATE" xml:space="preserve">
+    <value>Please enter a valid date! Date cannot be in the future.</value>
+  </data>
+  <data name="ERROR_IE_ICE_ACTIVE" xml:space="preserve">
+    <value>Please select a valid active value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_CRITHIGH" xml:space="preserve">
+    <value>Please enter a valid critical high value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_CRITLOW" xml:space="preserve">
+    <value>Please enter a valid critical low value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_DELETE" xml:space="preserve">
+    <value>Failed to delete item component data!</value>
+  </data>
+  <data name="ERROR_IE_ICE_HIGH" xml:space="preserve">
+    <value>Please enter a valid high value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_LABEL" xml:space="preserve">
+    <value>Please enter a valid item component label!</value>
+  </data>
+  <data name="ERROR_IE_ICE_LOW" xml:space="preserve">
+    <value>Please enter a valid low value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_MAX" xml:space="preserve">
+    <value>Please enter a valid legam max value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_MIN" xml:space="preserve">
+    <value>Please enter a valid legal min value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_SORTORDER" xml:space="preserve">
+    <value>Please enter a valid sort order!</value>
+  </data>
+  <data name="ERROR_IE_ICE_STATE" xml:space="preserve">
+    <value>Please select a valid state value!</value>
+  </data>
+  <data name="ERROR_IE_ICE_UNITS" xml:space="preserve">
+    <value>Please enter a valid units value!</value>
+  </data>
+  <data name="ERROR_IE_IC_ACTIVE" xml:space="preserve">
+    <value>Please select a valid active value!</value>
+  </data>
+  <data name="ERROR_IE_IC_DESCRIPTION" xml:space="preserve">
+    <value>Please enter a valid item description!</value>
+  </data>
+  <data name="ERROR_IE_IC_LABEL" xml:space="preserve">
+    <value>Please enter a valid item label!</value>
+  </data>
+  <data name="ERROR_IE_IC_LOOKBACK" xml:space="preserve">
+    <value>Please enter a valid lookback time!</value>
+  </data>
+  <data name="ERROR_IE_ITEM_GROUP" xml:space="preserve">
+    <value>Please select a valid item group!</value>
+  </data>
+  <data name="ERROR_IE_ITEM_TYPE" xml:space="preserve">
+    <value>Please select a valid item type!</value>
+  </data>
+  <data name="ERROR_IG_LABEL" xml:space="preserve">
+    <value>Please enter a valid item group label!</value>
+  </data>
+  <data name="ERROR_INVALID_EDITMODE" xml:space="preserve">
+    <value>Invalid edit mode, Please contact your system administrator!</value>
+  </data>
+  <data name="ERROR_INVALID_PARAMS" xml:space="preserve">
+    <value>Invalid paramaters, Please contact your system administrator!</value>
+  </data>
+  <data name="ERROR_LOAD_MENU" xml:space="preserve">
+    <value>Menu parameter null!</value>
+  </data>
+  <data name="ERROR_LSSN" xml:space="preserve">
+    <value>Please enter a valid LSSN!</value>
+  </data>
+  <data name="ERROR_OS_DEFINITION" xml:space="preserve">
+    <value>Please select a valid outcome state definition!</value>
+  </data>
+  <data name="ERROR_OS_LABEL" xml:space="preserve">
+    <value>Please enter a valid outcome state label!</value>
+  </data>
+  <data name="ERROR_PROCEDURE_DATE" xml:space="preserve">
+    <value>Procedure date must be in the future!</value>
+  </data>
+  <data name="ERROR_SP_CHECKLIST" xml:space="preserve">
+    <value>Unable to retrieve selected checklist!</value>
+  </data>
+  <data name="ERROR_SP_ITEM" xml:space="preserve">
+    <value>Unable to retrieve selected item!</value>
+  </data>
+  <data name="ERROR_SP_PATIENT" xml:space="preserve">
+    <value>Unable to retrieve selected patient!</value>
+  </data>
+  <data name="ERROR_TS_DEFINITION" xml:space="preserve">
+    <value>Please select a valid temporal state definition!</value>
+  </data>
+  <data name="ERROR_TS_LABEL" xml:space="preserve">
+    <value>Please enter a valid temporal state label!</value>
+  </data>
+  <data name="ERROR_VE_SERVICELABEL" xml:space="preserve">
+    <value>Please enter a valid service label!</value>
+  </data>
+  <data name="ERROR_SP_CHECKLISTSTATE" xml:space="preserve">
+    <value>This patient checklist has been cancelled/closed by another user!</value>
+  </data>
+  <data name="ERROR_SP_CURCHECKLIST" xml:space="preserve">
+    <value>Unable to retrieve current checklist!</value>
+  </data>
+</root>

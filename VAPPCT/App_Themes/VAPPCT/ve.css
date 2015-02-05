@@ -1,0 +1,94 @@
+﻿.temporal_state_fields
+{
+    width:300px;
+}
+
+.temporal_state_fields_left
+{
+    padding-top:5px;
+    width:135px;
+    float:left;
+    text-align:right;
+}
+
+.temporal_state_fields_right
+{
+    width:160px;
+    float:right;
+}
+
+.outcome_state_fields
+{
+    width:300px;
+}
+
+.outcome_state_fields_left
+{
+    padding-top:5px;
+    width:135px;
+    float:left;
+    text-align:right;
+}
+
+.outcome_state_fields_right
+{
+    width:160px;
+    float:right;
+}
+
+.decision_state_fields
+{
+    width:300px;
+}
+
+.decision_state_fields_left
+{
+    padding-top:5px;
+    width:135px;
+    float:left;
+    text-align:right;
+}
+
+.decision_state_fields_right
+{
+    width:160px;
+    float:right;
+}
+
+.item_group_fields
+{
+    width:275px;
+}
+
+.item_group_fields_left
+{
+    padding-top:5px;
+    width:110px;
+    float:left;
+    text-align:right;
+}
+
+.item_group_fields_right
+{
+    width:160px;
+    float:right;
+}
+
+.service_fields
+{
+    width:275px;
+}
+
+.service_fields_left
+{
+    padding-top:5px;
+    width:110px;
+    float:left;
+    text-align:right;
+}
+
+.service_fields_right
+{
+    width:160px;
+    float:right;
+}
